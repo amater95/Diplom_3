@@ -1,8 +1,8 @@
 import pytest
-import allure
 import helpers
 import urls
 
+from method_api import user_api
 from selenium import webdriver
 from pages.main_page import MainPage
 from pages.account_page import AccountPage
@@ -44,6 +44,6 @@ def pass_recover_page(driver):
 @pytest.fixture
 def user_data():
     user_data = helpers.generate_user_data()
-    helpers.create_user(user_data)
+    user_api.create_user(user_data)
     yield user_data
-    helpers.delete_user(user_data)
+    user_api.delete_user(user_data)

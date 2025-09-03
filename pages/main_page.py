@@ -1,10 +1,7 @@
 import allure
-import data
-
 
 from pages.base_page import BasePage
 from locators.main_page_locators import MainPageLocators
-from selenium.webdriver.support.ui import WebDriverWait
 
 
 class MainPage(BasePage):

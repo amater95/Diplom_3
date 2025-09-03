@@ -1,5 +1,4 @@
 import allure
-import data
 
 from pages.base_page import BasePage
 from locators.list_orders_page_locators import ListOrdersPageLocators
